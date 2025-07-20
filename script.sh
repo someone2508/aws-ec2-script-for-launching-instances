@@ -23,5 +23,9 @@ sudo npm install
 # turn up the server
 sudo npx pm2 start index.js
 
-# to install nginx in the machine
+# to install start and enable nginx in the machine
 sudo apt install nginx -y
+
+sudo systemctl start nginx
+
+sudo systemctl enable nginx
