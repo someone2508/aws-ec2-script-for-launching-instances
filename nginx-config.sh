@@ -20,6 +20,8 @@
 #
 
 upstream backend {
+        # ip_hash;                // we can keep anyone of the commented config
+        # least_conn;             // by default it using round robin, if nothing is given
         server 50.17.5.24:2000;
         server 54.147.41.191:2000;
 }
