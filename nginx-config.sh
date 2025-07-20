@@ -24,6 +24,9 @@ upstream backend {
         # least_conn;             // by default it using round robin, if nothing is given
         server 50.17.5.24:2000;
         server 54.147.41.191:2000;
+
+        # server 50.17.5.24:2000 weight=3;                // this will allow you to do a weighted round robin
+        # server 54.147.41.191:2000 weoght=1;
 }
 
 server {
